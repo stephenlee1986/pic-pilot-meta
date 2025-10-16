@@ -4,7 +4,7 @@
  * Plugin Name: Pic Pilot Meta
  * Plugin URI: https://wordpress.org/plugins/pic-pilot-meta/
  * Description: AI-powered image metadata generation for WordPress. Automatically create SEO-optimized titles, alt text, and duplicate images with intelligent AI assistance using OpenAI GPT-4o or Google Gemini.
- * Version: 2.2.2
+ * Version: 2.2.3
  * Author: Stephen Lee Hernandez
  * Author URI: https://profiles.wordpress.org/stephenhernandez/
  * License: GPL v2 or later
