@@ -1,0 +1,388 @@
+/* Duplicate Group Styles */
+.pic-pilot-meta .pic-pilot-duplicate-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.pic-pilot-meta .pic-pilot-duplicate-group .button {
+    flex: 1 1 auto;
+    min-width: 110px;
+}
+
+/* Toast Notifications */
+.pic-pilot-meta .pic-pilot-toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #23282d;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 169900;
+    opacity: 0;
+    font-size: 13px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pic-pilot-meta .pic-pilot-toast.show {
+    opacity: 0.95;
+}
+
+.pic-pilot-meta .pic-pilot-toast.error {
+    background: #d63638;
+}
+
+/* Generate/Regenerate Metadata Buttons */
+.pic-pilot-meta .picpilot-generate-meta {
+    cursor: pointer;
+    background: #2271b1;
+    color: #fff;
+    border: 1px solid #2271b1;
+    border-radius: 3px;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 2px;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.pic-pilot-meta .picpilot-generate-meta:hover {
+    background: #135e96;
+    border-color: #135e96;
+    color: #fff;
+}
+
+.pic-pilot-meta .picpilot-generate-meta:active {
+    background: #0f4c7a;
+    border-color: #0f4c7a;
+}
+
+.pic-pilot-meta .picpilot-generate-meta:disabled {
+    cursor: not-allowed;
+    background: #ddd;
+    border-color: #ddd;
+    color: #999;
+}
+
+.pic-pilot-meta .picpilot-generate-meta:disabled:hover {
+    background: #ddd;
+    border-color: #ddd;
+    color: #999;
+}
+
+/* Keywords Input Field */
+.pic-pilot-meta .picpilot-keywords {
+    cursor: text;
+    padding: 3px 6px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 11px;
+    transition: border-color 0.2s ease;
+}
+
+.pic-pilot-meta .picpilot-keywords:focus {
+    outline: none;
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* Comprehensive Image Filter Dropdown */
+.pic-pilot-meta #picpilot-comprehensive-filter {
+    margin-left: 5px;
+    padding: 3px 6px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+    background: #fff;
+    cursor: pointer;
+    min-width: 180px;
+}
+
+.pic-pilot-meta #picpilot-comprehensive-filter:focus {
+    outline: none;
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.pic-pilot-meta #picpilot-comprehensive-filter optgroup {
+    font-weight: bold;
+    color: #555;
+}
+
+.pic-pilot-meta #picpilot-comprehensive-filter option {
+    padding: 2px 4px;
+}
+
+/* Legacy alt filter (if still exists) */
+.pic-pilot-meta #picpilot-alt-filter {
+    margin-left: 5px;
+    padding: 3px 6px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.pic-pilot-meta #picpilot-alt-filter:focus {
+    outline: none;
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* Attachment Edit Page Styles */
+.pic-pilot-meta #picpilot-edit-page-controls {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.pic-pilot-meta #picpilot-edit-page-controls h3 {
+    margin-top: 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+.pic-pilot-meta #picpilot-edit-keywords {
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.pic-pilot-meta #picpilot-edit-keywords:focus {
+    outline: none;
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.pic-pilot-meta .picpilot-edit-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pic-pilot-meta .picpilot-edit-buttons .button {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pic-pilot-meta .picpilot-edit-buttons .button:hover {
+    background-color: #135e96;
+    border-color: #135e96;
+}
+
+.pic-pilot-meta .picpilot-edit-buttons .button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.pic-pilot-meta .picpilot-edit-buttons .button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.pic-pilot-meta #picpilot-edit-status {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Image Tags Styles */
+.pic-pilot-meta .column-picpilot_tags {
+    max-width: 200px;
+}
+
+.pic-pilot-meta .picpilot-tag {
+    display: inline-block;
+    background: #0073aa;
+    color: white;
+    padding: 2px 6px;
+    margin: 1px;
+    border-radius: 3px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.pic-pilot-meta .picpilot-tag:hover {
+    background: #005a87;
+}
+
+.pic-pilot-meta .picpilot-remove-tag {
+    margin-left: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.pic-pilot-meta .picpilot-remove-tag:hover {
+    opacity: 1;
+}
+
+.pic-pilot-meta .picpilot-add-tag-btn {
+    color: #0073aa;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    margin-top: 2px;
+    display: inline-block;
+}
+
+.pic-pilot-meta .picpilot-add-tag-btn:hover {
+    color: #005a87;
+    text-decoration: underline;
+}
+
+.pic-pilot-meta .picpilot-no-tags {
+    color: #999;
+    font-style: italic;
+    font-size: 11px;
+}
+
+/* Tag Filter Dropdown */
+.pic-pilot-meta #picpilot-tag-filter {
+    margin-left: 5px;
+    padding: 3px 6px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.pic-pilot-meta #picpilot-tag-filter:focus {
+    outline: none;
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* Tag Modal Styles */
+.pic-pilot-meta .picpilot-tag-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic-pilot-meta .picpilot-tag-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.pic-pilot-meta .picpilot-existing-tag {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    margin: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.pic-pilot-meta .picpilot-existing-tag:hover {
+    background: #e0e0e0;
+    border-color: #ccc;
+}
+
+.pic-pilot-meta .picpilot-existing-tags {
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fafafa;
+    border-radius: 3px;
+}
+
+/* PicPilot Column Styles */
+.pic-pilot-meta .column-picpilot_tools {
+    width: 160px;
+    max-width: 160px;
+}
+
+.pic-pilot-meta .picpilot-column-wrapper {
+    min-height: 40px;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.pic-pilot-meta .picpilot-column-wrapper .picpilot-keywords {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 10px;
+    padding: 2px 4px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.pic-pilot-meta .picpilot-button-group {
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.pic-pilot-meta .picpilot-button-group .button {
+    font-size: 9px !important;
+    padding: 6px 9px !important;
+    line-height: 1.2 !important;
+    min-height: auto !important;
+    border-radius: 2px;
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.pic-pilot-meta .picpilot-button-group .button:hover {
+    background-color: #0056b3 !important;
+    border-color: #004085 !important;
+    transform: none !important;
+    box-shadow: none !important;
+    color: white;
+}
+
+.pic-pilot-meta .picpilot-button-group .button.button-secondary:hover {
+    background-color: #5a5a5a !important;
+    border-color: #484848 !important;
+    color: white !important;
+}
+
+.pic-pilot-meta .picpilot-column-wrapper:hover {
+    background-color: #f0f8ff;
+    border-radius: 3px;
+}

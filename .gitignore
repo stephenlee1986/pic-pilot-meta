@@ -1,0 +1,88 @@
+# WordPress Plugin .gitignore
+# For WordPress.org repository submission
+
+# Development and build files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+
+# Composer (not allowed in WP.org repository)
+vendor/
+composer.lock
+composer.phar
+
+# Development documentation and logs
+documentation/logs.txt
+documentation/chat-session.md
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# WordPress specific
+wp-config.php
+.htaccess
+
+# Plugin specific development files
+/tests/
+phpunit.xml
+.phpunit.result.cache
+
+# Development and submission preparation files
+HISTORY.md
+history.md
+DEVELOPMENT-NOTES.md
+development-notes.md
+SUBMISSION-CHECKLIST.md
+submission-checklist.md
+README.md
+WORDPRESS-SUBMISSION-ROADMAP.md
+.claude/
+*.backup
+debug.txt
+*.zip
+.wordpress-org/
+
+# Local development environment files
+wp-config-local.php
+.env
+.env.local
+
+# Git and version control (if nested)
+.git/
+.gitignore.backup
+
+# Database dumps and exports (if any)
+*.sql
+*.sql.gz
+database-backup/
+
+# Build artifacts (if using build tools)
+build/
+dist/
+*.min.js.map
+*.min.css.map
+
+# Dependencies that should be bundled (keep actual files)
+# Only ignore if you're not including dependencies
